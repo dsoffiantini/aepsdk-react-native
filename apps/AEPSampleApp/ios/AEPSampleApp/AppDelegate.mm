@@ -23,7 +23,7 @@ governing permissions and limitations under the License.
   self.initialProps = @{};
   
   [AEPMobileCore setLogLevel:AEPLogLevelTrace];
-  [AEPMobileCore configureWithAppId:@"YOUR-APP-ID"];
+  [AEPMobileCore configureWithAppId:@"staging/1b50a869c4a2/925ffba3007a/launch-9bd987577972-development"];
   const UIApplicationState appState = application.applicationState;
   [AEPMobileCore registerExtensions:@[
       AEPMobileLifecycle.class, AEPMobileIdentity.class,
@@ -38,6 +38,8 @@ governing permissions and limitations under the License.
                                [AEPMobileCore lifecycleStart:nil];
                              }
                            }];
+  NSDictionary *updatedConfig = @{ @"edge.environment": @"int"};
+  [AEPMobileCore updateConfiguration:updatedConfig];
 
   return [super application:application didFinishLaunchingWithOptions:launchOptions];
 }

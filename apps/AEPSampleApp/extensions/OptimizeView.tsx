@@ -54,7 +54,7 @@ export default ({navigation}: any) => {
   const [targetProposition, setTargetProposition] = useState<Proposition | undefined>();
 
   const decisionScopeText = new DecisionScope(
-    'eyJ4ZG06YWN0aXZpdHlJZCI6Inhjb3JlOm9mZmVyLWFjdGl2aXR5OjE0MWM4NTg2MmRiMDQ4YzkiLCJ4ZG06cGxhY2VtZW50SWQiOiJ4Y29yZTpvZmZlci1wbGFjZW1lbnQ6MTQxYzZkNWQzOGYwNDg5NyJ9',
+    'bW9iaWxlYXBwOi8vb3JnLnJlYWN0anMubmF0aXZlLmV4YW1wbGUuYWVwc2FtcGxlYXBwL3Rlc3Q=',
   );
   const decisionScopeImage = new DecisionScope(
     'eyJ4ZG06YWN0aXZpdHlJZCI6Inhjb3JlOm9mZmVyLWFjdGl2aXR5OjE0MWM4NTg2MmRiMDQ4YzkiLCJ4ZG06cGxhY2VtZW50SWQiOiJ4Y29yZTpvZmZlci1wbGFjZW1lbnQ6MTQxYzZkYTliNDMwNDg5OCJ9',
